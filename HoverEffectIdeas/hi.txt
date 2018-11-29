@@ -1,0 +1,12 @@
+       <div class="grid">
+		<figure class=“effect-chico”>
+			<img src="../imgs/index/modern-sofa_resized.jpg" alt="近期作品">
+			<figcaption>
+				<h3></h3>
+				<p>
+			             <a href="dot_pro_detail.html">View more</a>
+				</p>
+			</figcaption>			
+		</figure>
+		
+	</div>

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Skyline | 一起進入音樂的奇幻旅程吧！</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link href="" rel="stylesheet">
+
+<link rel="Shortcut Icon" type="image/x-icon" href="assets/LOGO design final2-01.png" />
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+ <link rel="stylesheet" href="css/jquery-yys-slider.css" type="text/css" />
+ <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+<script src="js/jquery-yys-slider.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- <script src="js/jquery.fullPage.js"></script> -->
+<!-- <script src="js/examples.js"></script> -->
+
+
+ <script>
+	$(document).ready(function(){
+
+				$(document).scroll(function(){
+					
+					var scroll_value = $(window).scrollTop();
+				
+
+					if(scroll_value == 0){
+						$('.header').removeClass('change_black');
+						$('.header').addClass('change_transparent');
+					}
+
+					if(scroll_value >500){
+						$('.header').removeClass('change_transparent');
+						$('.header').addClass('change_black');
+					}
+
+				});
+
+				new WOW().init();
+
+				//========================
+
+				$("#on").css("color", "white");
+
+				$('#off').click(function(){
+					$('#video').prop('volume','0');
+					$("#off").css("color", "white");
+					$("#on").css("color", "#aaa");
+					$("#iconMusic").hide();
+
+
+					
+				});
+
+
+				$('#on').click(function(){
+					$('#video').prop('volume','1');
+					$("#on").css("color", "white");
+					$("#off").css("color", "#aaa");
+					$("#iconMusic").show();
+
+					
+				});
+
+
+				$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+					$(this).toggleClass('open');
+					});
+
+
+				// $('.video').fullscreenBackground();
+
+				$(".gallery_container").gallery_slider({
+  				imgNum: 6 //轮播图数量至少为4张
+				});  
+
+
+				//====full page====
+
+		// $('#fullpage').fullpage({
+		// 		'verticalCentered': false,
+		// 		'css3': true,
+		// 		'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+		// 		'navigation': true,
+		// 		'navigationPosition': 'right',
+		// 		'navigationTooltips': ['', '', '', ''],
+
+		// 		'afterLoad': function(anchorLink, index){
+		// 			if(index == 2){
+		// 				$('#iphone3, #iphone2, #iphone4').addClass('active');
+		// 			}
+		// 		},
+
+		// 		'onLeave': function(index, nextIndex, direction){
+		// 			if (index == 3 && direction == 'down'){
+		// 				$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+		// 			}
+		// 			else if(index == 3 && direction == 'up'){
+		// 				$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+		// 			}
+
+		// 			$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+		// 			$('#staticImg').toggleClass('moveDown', nextIndex == 4);
+		// 			$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+		// 		}
+		// 	});
+
+
+		//=====full page test//
+
+		$("#btn1").click(function(){
+			$("body,html").animate({scrollTop:$("#section1").offset().top},800)
+			
+
+		});
+
+		$("#btn2").click(function(){
+			$("body,html").animate({scrollTop:$("#section2").offset().top},800)
+		});
+
+		$(".scroll").click(function(){
+			$("body,html").animate({scrollTop:$("#section2").offset().top},800)
+		});
+
+		$("#btn3").click(function(){
+			$("body,html").animate({scrollTop:$("#section3").offset().top},800)
+		});
+
+		$("#btn4").click(function(){
+			$("body,html").animate({scrollTop:$("#section4").offset().top},800)
+		});
+
+		$("#btn5").click(function(){
+			$("body,html").animate({scrollTop:$("#section5").offset().top},800)
+		});
+
+		$("#btn6").click(function(){
+			$("body,html").animate({scrollTop:$("#section6").offset().top},800)
+		});
+
+		$("#btn7").click(function(){
+			$("body,html").animate({scrollTop:$("#section7").offset().top},800)
+		});
+
+	
+		$(".ch").hide();
+
+		$(".btn2").click(function(){
+		  $(".section3Text").hide();
+		});
+
+		$(".btn2").click(function(){
+		  $(".section3Text").fadeIn(3000).html("<h2>4000萬首歌</h2><p>最豐富多元的音樂曲庫，超過30種曲風、60種情境分類，每個時刻都能輕鬆找到最對的那首歌。</p>");
+		});
+
+		$(".btn3").click(function(){
+		  $(".section3Text").fadeIn(3000).html("<h2>個人化推薦</h2><p>推薦更多你可能會為之著迷的新音樂。駐站名人及精選歌單、新曲歌單、話題歌單，任你源源不絕探索。</p>");
+		});
+		$(".btn4").click(function(){
+		  $(".section3Text").fadeIn(3000).html("<h2>獨家演唱會直播</h2><p>最了解你的直播平台，推出國內外獨家高品質影音直播。並支援多視角、360度環景收看及VR特效，宛如身歷其境。聊天室讓音樂同好齊聚共鳴，一鍵重播則能回味精彩每一刻。</p>");
+		});
+		$(".btn1").click(function(){
+		  $(".section3Text").fadeIn(3000).html("<h2>高音質環繞效果</h2><p>一起聽」服務讓你和喜歡的歌手、朋友更靠近！不但能發現他們平常都在聽什麼，還能同時聊天互動！</p>");
+		});
+
+		
+
+
+
+	
+
+
+				
+	});	
+
+
+</script>
+
+
+<style type="text/css">
+			
+	.part-tese .gallery_container {
+		   opacity: 1; 
+
+
+	   }
+
+	   .content-part {
+		   position: absolute;
+		 
+		   left: 75%;
+		   
+		   margin-top: 20px;
+	   }
+
+	   .gallery_container .prev, .gallery_container .prev {
+		   position: absolute;
+		   top: 15px;
+		   width: 140px;
+		   height: 520px;
+		   left: -50%;
+		   z-index: 99;
+	   }
+
+	   .gallery_container .next, .gallery_container .next {
+		   position: absolute;
+		   top: 15px;
+		   width: 140px;
+		   height: 520px;
+		   left: 110%;
+		   z-index: 99;
+	   }
+
+	   .part-tese .gallery_container .gallery_wrap {
+		   width: 350px;
+		   height: 300px;
+		   position: absolute;
+		   top: -20%;
+		   left: 20px;
+	   }
+
+	   
+
+	   .part-tese .gallery_container .gallery_wrap .line-t {
+display: none;
+}
+
+.part-tese .gallery_container .gallery_wrap .line-l {
+display: none;
+}
+
+.part-tese .gallery_container .gallery_wrap .line-b {
+display: none;
+}
+.part-tese .gallery_container .gallery_wrap .line-r {
+display: none;
+}
+
+
+
+
+#dotRight{
+position: fixed;
+width: 5%;
+height: auto;
+
+
+left: 95%;
+top: 35%;
+margin-right: 5%;
+z-index: 1000;
+border-radius: 5px;
+text-align: center;
+}
+
+#dotRight li{
+list-style: none;
+width: 10px;
+height: 10px;
+border-radius: 10px;
+background-color: #eee;
+
+text-align: center;
+color: #fff;
+margin: 15px auto;
+
+
+}
+
+#dotRight li:hover{
+background-color:#59FED9;
+
+}
+
+#dotRight a{
+text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px){
+
+	#dotRight{
+
+	display: none;
+
+
+
+
+
+	}
+}
+
+</style>
+
+
+
+
+
+
+</head>
+
+
+<body>
+<div class="rwdNav">
+	<input type="checkbox" id="menuControl" >
+
+	<div class="mobileMenu">
+		<ul>
+			<li style="margin-top: 40px"><a href="download.html">下載Skyline</a></li>
+			<hr>
+			<li><a href="login.html">登入｜註冊</a></li>
+			<hr>
+			<li><a href="premium.html">Premium</a></li>
+			<hr>
+			<li><a href="musicRank.html">音樂最前線</a></li>
+			<hr>
+			<li><a href="custumer.html">客服中心</a></li>
+			<hr>
+			<li><a href="#">關於我們</a></li>
+			<hr>
+			<li><a href="#">人才招募</a></li>
+			<hr>
+			<li><a href="#">新聞發佈</a></li>
+			<hr>
+			<li><a href="#">最新消息</a></li>
+		</ul>
+				
+				
+	</div>
+
+	<label  for="menuControl">
+
+		<div id="iconFrame">
+			<div id="nav-icon4">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+
+
+		</div>
+	
+	</label>
+
+	<div class="mobileNav">
+		<i class="fa fa-search" aria-hidden="true" ></i>
+		<a href="index.html"><img src="assets/LOGO.png"></a>
+		<div class="green"></div>
+		
+	</div>
+
+	
+
+	
+</div>
+
+
+<div class="header">
+	<div class="frame">
+
+	<a href="index.html" class="logo"></a>
+	<div class="search"><input class="find" type="text" name="search" placeholder="搜尋歌手、歌曲...">
+
+		<a href="#"><i class="fa fa-search" aria-hidden="true" ></i></a>
+
+	</div>
+	
+		<nav class="stroke">
+		
+			
+		
+			<ul>
+
+				<li><a href="download.html">下載Skyline</a></li>
+				<li><a href="login.html">登入｜註冊</a></li>
+				<li><a href="premium.html">Premium</a></li>
+				<li><a href="musicRank.html">音樂最前線</a></li>
+				<li><a href="custumer.html">客服中心</a></li>
+
+			</ul>
+		</div>	
+	</div>
+</div>
+
+
+
+<div id="dotRight">
+	<a href="#section1"><li id="btn1"></li></a>
+	<a href="#section2"><li id="btn2"></li></a>
+	<a href="#section3"><li id="btn3"></li></a>
+	<a href="#section4"><li id="btn4"></li></a>
+	<a href="#section5"><li id="btn5"></li></a>
+	<a href="#section6"><li id="btn6"></li></a>
+	<a href="#section7"><li id="btn7"></li></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="fullpage">
+
+
+
+<div id="section1">
+
+<div class="section1">
+
+	
+
+	<div class="video"><video id="video" src="ref/comercial.mov"  autoplay="" loop=""    ></video></div>
+
+	<div class="frame">
+
+		<div class="line1"></div>
+		
+		<h1>TIME FOR A FANTASITC <br>MUSIC JOURNEY</h1>
+		<div class="line2"></div><br>
+		
+		<a class="bottom" href="#">
+			<span>立即試用</span>
+		<div class='layer'></div>
+		</a>
+		<a class="scroll" href="#">scroll</a>
+		<div class="arror"><img src="assets/scroll.png"></div>
+
+			
+
+		<div class="switch">
+				<div id="iconMusic" class="navi-navi-sound-icon ">
+							<span></span>
+							<span></span>
+							<span></span>
+						
+				</div>	
+
+			Music :  <a id="on" href="#">ON</a> | <a id="off" href="#">OFF</a></div>
+
+
+		
+
+	</div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div id="section2">
+
+<div class="section2">
+	<div class="frame">
+		<h1  class="wow fadeInDown">3步驟輕鬆下載<br><span id="dot">，</span>可以使用於各種裝置</h1>
+		<div class="left wow fadeIn"><img src="assets/computer_03.jpg"></div>
+		<div class="right wow fadeInUp">
+
+			<div class="dot">
+				<div class="dotframe">
+
+					<div class="round">
+						<a class="button" href="#"></a>
+					</div>
+					<div class="line"></div>
+					<div class="round">
+						<a class="button" href="#"></a>
+					</div>
+					<div class="line"></div>
+					<div class="round">
+						<a class="button" href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+
+				<h2>下載APP</h2>
+				<h2>申請帳號</h2>
+				<h2>開始享受暢聽Skyline</h2>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+</div>
+
+
+
+
+<div id="section3">
+<div class="section3">
+
+	<div class="section3Text">
+
+
+		
+			<h2>120000首歌</h2>
+			<p>最豐富多元的音樂曲庫，超過30種曲風、60種情境分類，
+				每個時刻都能輕鬆找到最對的那首歌。</p>
+		
+
+	</div>
+
+
+		
+
+	<div class="polygon">
+		
+		
+	</div>
+	<div class="ball_1 "></div>
+	<div class="ball_2 wow fadeInLeft"></div>
+	<div class="ball_3"></div>
+	<div class="ball_4"></div>
+
+	<a class="btn1 wow fadeInLeft" >
+		<span>日語</span>
+		<img src="assets/album/oneOkRock.jpg" alt=""></a>
+	<a class="btn2 wow fadeInLeft" >
+		<span>華語</span>
+		<img src="assets/album/jay.jpg" alt=""></a>
+	<a class="btn3" >
+		<span>歐美</span>
+		<img src="assets/album/ariana.jpg" style="width: 100%;" alt=""></a>
+	<a class="btn4" >
+		<span>韓語</span>
+		<img src="assets/album/twice.jpg" alt=""></a>
+	<img src="assets/dark.jpg" class="bg" >
+
+	
+</div>
+</div>
+
+
+
+
+
+
+<div id="section4">
+<div class="section4">
+	<img src="assets/man.jpg" width="100%" class="wow fadeIn">
+	<div class="black "></div>
+	<div class="text wow fadeInLeft">
+		<h1 class="wow fadeInLeft">個人化推薦</h1>
+		<div class="bar wow fadeInLeft"></div>
+		<p class="wow fadeInLeft"> 推薦更多你可能會為之著迷的新音樂。駐站名人及精選歌單、新曲歌單、話題歌單，任你源源不絕探索。</p>
+	</div>
+</div>
+</div>
+
+
+
+
+
+<div id="section5">
+<div class="section5">
+	<img src="assets/layout3_03.jpg" class="wow fadeIn">
+	<div class="black">
+
+	</div>
+	<div class="text wow bounceInRight">
+		<h1 class="wow fadeInRight">高音質環繞效果</h1>
+		<div class="bar wow fadeInRight"></div>
+		<p class="wow fadeInRight">逼近CD的320kbps超高音質，結合DTS立體環繞音效，戴上任何耳機，選擇你所喜愛的。</p>	
+	</div>
+</div>
+</div>
+
+
+
+
+
+<div id="section6">
+<div class="section6">
+<!-- 	<img src="assets/layout6.jpg"> -->
+
+
+	<div class="frame">
+		<h2 class="wow fadeInUp">輕鬆編輯Skyline的歌單</h2>
+		<p class="wow fadeInUp">你可以找到由樂迷和專家們共同打造、配合不同心情的現成播放清單。</p>
+
+		<div class="four"><img src="assets/pic.jpg">
+			<img src="assets/pic2.jpg">
+			<img src="assets/pic3.jpg">
+			<img src="assets/pic4.jpg">
+		</div>
+
+				<div class="content-part part-tese wow fadeInUp">
+				  
+				  <div class="gallery_container">
+				    <div class="gallery_wrap threeD_gallery_wrap">
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_left_middle">
+				         <a href="#"><img src="images/pic.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item front_side">
+				        <a href="#"><img src="images/pic2.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_right_middle">
+				         <a href="#"><img src="images/pic3.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_out">
+				         <a href="#"><img src="images/pic4.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_out">
+				         <a href="#"><img src="images/pic5.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+
+				      <div href="javascript:;" class="gallery_item threeD_gallery_item gallery_out">
+				         <a href="#"><img src="images/pic6.jpg" class="show"></a>
+				        <div class="line-t"></div>
+				        <div class="line-r"></div>
+				        <div class="line-b"></div>
+				        <div class="line-l"></div>
+				      </div>
+				      
+				      <a class="prev" href="javascript:;"></a>
+				      <a class="next" href="javascript:;"></a>
+				    </div>
+				  </div>
+				</div>
+				
+		
+	</div>
+</div>
+</div>
+
+
+
+<div id="section7">
+<div class="section7">
+
+	<div class="title wow fadeInLeft">加入
+			<span class="green">S</span>
+			<span class="blue">k</span>
+			<span class="green">y</span>
+			<span class="blue">l</span>
+			<span class="green">i</span>
+			<span class="blue">n</span>
+			<span class="green">e</span>
+			<span id="br"><br></span>
+			<span id="dot">，</span>開始享受音樂新生活<span id="dot">。</span>
+		</div>
+	
+	<div class="frame">
+		
+		
+		<div class="left wow fadeIn">
+				<div class="check">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-square-o" aria-hidden="true"></i>
+					<i class="fa fa-square-o" aria-hidden="true"></i>
+					<i class="fa fa-square-o" aria-hidden="true"></i>
+					<i class="fa fa-square-o" aria-hidden="true"></i>
+					<i class="fa fa-square-o" aria-hidden="true"></i>
+					
+
+				</div>
+				<div class="line">
+					<div class="inline"></div>
+					
+				</div>
+				<div class="text">
+					<h4>隨機播放</h4>
+					<h4>全無廣告</h4>
+					<h4>無限略過次數</h4>
+					<h4>離線收聽</h4>
+					<h4>可播放任何歌曲</h4>
+					<h4>高音質音效</h4>
+				</div>
+
+		
+
+		</div>
+		<a href="#" class="btn wow pulse">免費加入會員</a>
+		
+		
+
+
+		<div class="left wow fadeIn">
+				<div class="check">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					
+
+				</div>
+				<div class="line">
+					<div class="inline"></div>
+					
+				</div>
+				<div class="text">
+					<h4>隨機播放</h4>
+					<h4>全無廣告</h4>
+					<h4>無限略過次數</h4>
+					<h4>離線收聽</h4>
+					<h4>可播放任何歌曲</h4>
+					<h4>高音質音效</h4>
+				</div>
+
+		
+
+		</div>
+
+		<a href="#" class="btn2 wow pulse">升級Premium</a>	
+
+		
+	</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="footer">
+
+	<div class="frame">
+		 <div class="type">
+
+		 	<div class ="white">
+			 	<input type="text" name="text" placeholder="輸入E-mail獲得最新流行音樂資訊">
+
+			 	<a href="#" class="send">送出</a>
+			</div>
+		 </div>
+		
+
+		<div class="content">
+			<div class="left">
+				<ul>
+					<li><h2>公司簡介</h2></li>
+					<li><a href="#">關於我們</a></li>
+					<li><a href="#">人才招募</a></li>
+					<li><a href="#">新聞發佈</a></li>
+					<li><a href="#">最新消息</a></li>
+				</ul>
+			</div>
+			<div class="mid">
+				<ul>
+					<li><h2>幫助</h2></li>
+					<li><a >FAQ</a></li>
+					<li><a >客服支持 <br> service.tw@o.skyline </a></li>
+					<li><a >商務合作<br> service.tw@o.skyline</a></li>
+					<li><a >客服電話(02)12345-6789</a></li>
+				</ul>
+			</div>
+
+			<div class="right">
+				<h2>下載Skyline</h2>
+				<div class="top">
+					<a href="https://play.google.com/store?hl=zh_TW"><img class="pic" src="assets/googleplay_available.png"></a>
+					<a href="https://www.apple.com/tw/ios/app-store/"><img class="pic" src="assets/appstore.png"></a>
+				</div>
+				<div class="mid">
+					<img class="a" src="assets/LOGO design 2-04.png">
+					<div class="line1"></div>
+					<div class="line2"></div><a href="http://140.115.236.72/demo-personal/BD103/web/C1700342/">
+					<img class="b" src="assets/hey boy logo-02.png">
+					</a>
+				</div>
+				<div class="bot">
+					<h2>社群追蹤</h2>
+					<a href="#"><img src="assets/facebook.png"></a>
+					<a href="#"><img src="assets/instgram.png"></a>
+					<a href="#"><img src="assets/twitter.png"></a>
+					<a href="#"><img src="assets/youtube.png"></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="bottom">
+		© Copyright 2017 skyline music PTE.LTD. All rights reserved. <br>
+
+Use of this website constitutes acceptance of the Terms of Use and Privacy Policy.
+	</div>
+
+	<div class="bottomRwd">
+		© Copyright 2017 skyline music 
+	</div>
+</div>
+
+    
+</body>
+</html>
