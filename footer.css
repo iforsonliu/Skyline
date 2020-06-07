@@ -57,12 +57,11 @@
 
 
 .footer .frame{
-	/*width: 960px;
-	margin: 0 auto;
-	height: 750px;
-*/
-
-padding:10%;
+    position: relative;
+    left: 10%;
+    /* right: 50%; */
+	margin: 0 10% 10% 10%;
+	padding-top: 10%;
 
 
 }

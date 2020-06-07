@@ -463,6 +463,7 @@ nav.stroke ul li a:hover:after {
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom:100px; 
+	text-align: center;
 	
 
 
@@ -485,7 +486,19 @@ nav.stroke ul li a:hover:after {
 
 .section2 .frame .content{
 	width: 500px;
-	float: left;
+	display: inline-block;
+	
+
+
+
+
+
+}
+
+.section2 .frame .firstblock{
+	width: 500px;
+	display: inline-block;
+	
 	margin-left: 7%;
 
 
