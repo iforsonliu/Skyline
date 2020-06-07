@@ -276,7 +276,6 @@
 	float: left;
 	margin-top: 7px;
 	margin-left: 20px;
-	/* margin-right: 5%; */
 	padding-left: 30px;
 
 
@@ -289,7 +288,6 @@
 .header .search{
 	width: 20%;
 	height: 70px;
-
 	float: left;
 	text-align: center;
 	line-height: 65px;
