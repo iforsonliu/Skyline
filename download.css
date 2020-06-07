@@ -260,7 +260,7 @@ body{
 	width: 10%;
 	height: 70%;
 		background-image: url(assets/LOGO.png);
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	z-index: 100;
 	float: left;
