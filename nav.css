@@ -276,7 +276,7 @@
 	float: left;
 	margin-top: 7px;
 	margin-left: 20px;
-	margin-right: 5%;
+	/* margin-right: 5%; */
 	padding-left: 30px;
 
 
@@ -299,9 +299,9 @@
 .header .search i{
 	color: #fff;
 	font-size: 18px;
-	position: absolute;
-	top: 25px;
-	left: 36%;
+	position: relative;
+    top: -62px;
+    left: 41%;
 
 	}
 
