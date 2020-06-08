@@ -413,6 +413,7 @@ border-color: #59FED9 transparent transparent transparent;
 	width: 1000px;
 	height: 50px;
 	/*background-color: pink;*/
+	display: block;
 
 }
 
@@ -554,6 +555,7 @@ figure.effect-chico p {
 	width: 1000px;
 	height: 50px;
 	/*background-color: pink;*/
+	display: block;
 
 }
 
@@ -696,7 +698,8 @@ height: 0.1px;
 
 
 .section4 .frame .title{
-	width: 1000px;
+	width: 80%;
+	margin: 0 auto;
 	height: 170px;
 	
 	
@@ -948,6 +951,10 @@ height: 0.1px;
 		height: 40%;
 	}
 
+	.section1 .more{
+		display: none;
+	}
+
 
 
 
@@ -989,10 +996,20 @@ height: 0.1px;
 	}
 
 	.section2 {
-		width: 100%
+		width: 100%;
+		
 	}
 	.section2 .frame{
-		width: 100%
+		width: 100%;
+		padding-bottom: 44%;
+	
+		
+	}
+
+	.section2 .frame .top{
+		
+		display: none;
+	
 	}
 
 	.section2 .frame .top{
@@ -1001,6 +1018,12 @@ height: 0.1px;
 
 	.section3 .frame .bot{
 		display: none;
+	}
+
+	.section3 .frame .top{
+		
+		display: none;
+	
 	}
 
 	.section4 {
@@ -1016,8 +1039,24 @@ height: 0.1px;
 	}
 
 	.section4 .frame .music{
-		margin-bottom: 10%;
+		height: 500px;
+		position: relative;
+		top: 100px;
+		width: 100%;
+		left: 0;
 	}
+
+	.section4 .frame .music .content{
+	
+		width:100%;
+		
+	}
+
+	.section4 .frame .music .content .play{
+	
+		display: none;
+		
+	} 
 
 	.section4 .frame .block{
 		width: 90%;
@@ -1034,7 +1073,7 @@ height: 0.1px;
 		height: 200px;
 		background:url(assets/global.jpg);
 		background-size: cover;
-		display: block;
+		display: none;
 		margin: 0 auto;
 		float: left;
 		margin-bottom: 10%;
@@ -1043,8 +1082,10 @@ height: 0.1px;
 	}
 
 	.section4 .frame #rwd{
-	display: block;
+	display: none;
 }
+
+
 
 
 
