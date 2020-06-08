@@ -58,10 +58,11 @@
 
 .footer .frame{
     position: relative;
-    left: 10%;
+    /* left: 10%; */
     /* right: 50%; */
-	margin: 0 10% 10% 10%;
-	padding-top: 10%;
+	/* margin: 0 10% 10% 10%; */
+	padding: 10% 0;
+	text-align: center;
 
 
 }
@@ -304,7 +305,7 @@ color: #59FED9;
 	}
 
 	.footer .frame .content .right{
-		width: 150px;
+		/* width: 150px; */
 		
 
 	}
@@ -325,7 +326,7 @@ color: #59FED9;
 	}
 
 	.footer .frame .content .right .bot{
-		width: 240px;
+		/* width: 240px; */
 		margin: 0px;
 	}
 
