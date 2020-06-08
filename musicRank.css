@@ -3,7 +3,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: #111;
+	background-color: #1D1D1D;
 	font-family: lato2,'Noto Sans TC', sans-serif;
 }
 
@@ -997,6 +997,7 @@ height: 0.1px;
 
 	.section2 {
 		width: 100%;
+		display: none;
 		
 	}
 	.section2 .frame{
@@ -1014,6 +1015,13 @@ height: 0.1px;
 
 	.section2 .frame .top{
 		width: 100%
+	}
+
+	.section3 .frame{
+		width: 100%;
+		padding-bottom: 44%;
+	
+		
 	}
 
 	.section3 .frame .bot{

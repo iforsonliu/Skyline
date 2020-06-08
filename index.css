@@ -9,7 +9,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-
+	background-color: #252525;
 	font-family: lato2,'Noto Sans TC', sans-serif;
 }
 
@@ -40,6 +40,7 @@ body{
 
 .section1{
 	width: 100%;
+	background-color: #252525;
 
 	
 	/*overflow: hidden;*/
