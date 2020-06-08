@@ -721,6 +721,8 @@ z-index: 3;
 	
 	
 	  border-image: linear-gradient(to right, #A8F1C0 0%, #72FCEA 100%);
+	  -moz-border-image: -moz-linear-gradient(to right, #A8F1C0 0%, #72FCEA 100%);
+      -webkit-border-image: -webkit-linear-gradient(to right, #A8F1C0 0%, #72FCEA 100%);
 	  box-shadow: 10px 10px  20px 0px black;
 
 	  border-image-slice: 1;
@@ -1098,10 +1100,10 @@ z-index: 3;
 }
 
 	.section3 .polygon{
-	width: 64%;
-	height: 40%;
-	top: 5%;
-	left:15%;
+		width: 68%;
+		height: 32%;
+		top: 7%;
+		left: 12%;
 	
 	}
 
