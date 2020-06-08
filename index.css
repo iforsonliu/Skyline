@@ -1830,7 +1830,7 @@ letter-spacing: -10px;
 
 .section7 .frame .btn{
 	width: 25%;
-	height: 7%;
+	/* height: 7%; */
 	border-radius: 50px;
 	background-color: #fff;
 	display: block;
@@ -1842,8 +1842,10 @@ letter-spacing: -10px;
 	text-decoration: none;
 	color: #222;
 	letter-spacing: 2px;
-	font-size: 16px;
+	font-size: 20px;
 	box-shadow: 0px 3px 10px 000;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 	}
 
@@ -1853,7 +1855,7 @@ letter-spacing: -10px;
 	top: 85%;
 
 	width: 25%;
-	height: 7%;
+	/* height: 7%;  */
 	border-radius: 50px;
 	background:linear-gradient(to right, #A8F1C0 0%, #91D0F4 100%);
 	display: block;
@@ -1862,8 +1864,10 @@ letter-spacing: -10px;
 	text-decoration: none;
 	color: #222;
 	letter-spacing: 2px;
-	font-size: 16px;
+	font-size: 20px;
 	box-shadow: 0px 3px 10px 000;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 	}
 
